@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Comp229_Assign01 {
+namespace Comp229_Assign03 {
     
     
     public partial class SiteMaster {

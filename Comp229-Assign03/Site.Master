@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Comp229_Assign01.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Comp229_Assign03.SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -51,11 +51,11 @@
 				
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-						<li><img src="Images/logo.jpg" width= "50px" height= "50px" alt="logo"></li> <%--image source: created from graphicsprings.com--%>
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">Student</a></li>
-                        <li><a runat="server" href="~/Contact">Courses</a></li>
-                        <li><a runat="server" href="~/Contact">Update</a></li>
+						<li><img src="Images/logo.jpg" width= "25px" height= "25px" alt="logo"></li> <%--image source: created from graphicsprings.com--%>
+                        <li><a runat="server" href="~/Home">Home</a></li>
+                        <li><a runat="server" href="~/Student">Student</a></li>
+                        <li><a runat="server" href="~/Courses">Courses</a></li>
+                        <li><a runat="server" href="~/Update">Update</a></li>
                     </ul>
                 </div>
             </div>
