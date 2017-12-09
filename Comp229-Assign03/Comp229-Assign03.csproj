@@ -126,12 +126,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
-    <Content Include="Contact.aspx" />
+    <Content Include="App_Data\Database.mdf" />
+    <Content Include="App_Data\Database_log.ldf">
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
+    <Content Include="Courses.aspx" />
+    <Content Include="Student.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Default.aspx" />
+    <Content Include="Home.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -142,6 +146,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Images\Capture.JPG" />
+    <Content Include="Images\logo.JPG" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -171,6 +177,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="Update.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -178,27 +185,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="Courses.aspx.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="Courses.aspx.designer.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="Student.aspx.cs">
+      <DependentUpon>Student.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="Student.aspx.designer.cs">
+      <DependentUpon>Student.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -218,6 +225,13 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -226,9 +240,7 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
