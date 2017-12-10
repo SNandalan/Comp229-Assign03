@@ -8,7 +8,7 @@ Date: 8 December 2017--%>
         <p>This is the Student Page</p>
     <h4>List Of Students</h4>
         <asp:GridView ID="studentGridView" runat="server" AutoGenerateColumns="False" 
-        DataKeyNames="StudentID" AllowSorting="True">
+        DataKeyNames="StudentID" AllowSorting="True" Height="342px" Width="902px">
         <Columns>
             <asp:HyperLinkField DataTextField="StudentID" HeaderText="Student ID" Visible="true" DataNavigateUrlFields="StudentID"
                 DataNavigateUrlFormatString="Student.aspx?StudentID={0}" />
@@ -24,7 +24,7 @@ Date: 8 December 2017--%>
     <div class="jumbotron">
     <h4>List Of Courses</h4>
         <asp:GridView ID="coursesGridView" runat="server" AutoGenerateColumns="False" 
-        DataKeyNames="CourseID" AllowSorting="True">
+        DataKeyNames="CourseID" AllowSorting="True" Height="343px" Width="905px">
         <Columns>
             <asp:HyperLinkField DataTextField="CourseID" HeaderText="Course ID" Visible="true" DataNavigateUrlFields="CourseID"
                 DataNavigateUrlFormatString="Courses.aspx?CourseID={0}" />
