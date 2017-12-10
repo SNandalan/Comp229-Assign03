@@ -51,7 +51,7 @@
 				
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-						<li><img src="Images/logo.jpg" width= "25px" height= "25px" alt="logo"></li> <%--image source: created from graphicsprings.com--%>
+						<li><img src="Images/logo.png" width= "25px" height= "25px" alt="logo"></li> <%--image source: created from graphicsprings.com--%>
                         <li><a runat="server" href="~/Home">Home</a></li>
                         <li><a runat="server" href="~/Student">Student</a></li>
                         <li><a runat="server" href="~/Courses">Courses</a></li>
