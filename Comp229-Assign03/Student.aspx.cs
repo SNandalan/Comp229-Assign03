@@ -13,8 +13,11 @@ namespace Comp229_Assign03
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ConnectData();
-            ConnectCourseData();
+            if (!IsPostBack)
+            {
+                ConnectData();
+                ConnectCourseData();
+            }
         }
         private void ConnectData()
         {
