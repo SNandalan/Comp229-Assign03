@@ -15,6 +15,8 @@ Date: 8 December 2017--%>
             <asp:BoundField DataField="LastName" HeaderText="Last Name" />
             <asp:BoundField DataField="FirstMidName" HeaderText="First Name" />
             <asp:BoundField DataField="EnrollmentDate" HeaderText="Enrollment Date" />
+            <asp:CommandField HeaderText="Delete" DeleteText="Delete" 
+                ShowDeleteButton="true" ButtonType="Link" />
 
         </Columns>
     </asp:GridView>
@@ -26,9 +28,9 @@ Date: 8 December 2017--%>
         <Columns>
             <asp:HyperLinkField DataTextField="CourseID" HeaderText="Course ID" Visible="true" DataNavigateUrlFields="CourseID"
                 DataNavigateUrlFormatString="Courses.aspx?CourseID={0}" />
-             <asp:BoundField DataField="Title" HeaderText="Title" Visible="true"/>
-            <asp:BoundField DataField="Credits" HeaderText="Credits" Visible="true"/>
-            <asp:BoundField DataField="DepartmentID" HeaderText="DepartmentID" Visible="true"/>
+             <asp:BoundField DataField="Title" HeaderText="Title" />
+            <asp:BoundField DataField="Credits" HeaderText="Credits" />
+            <asp:BoundField DataField="DepartmentID" HeaderText="DepartmentID" />
         </Columns>
     </asp:GridView>
         </div>
