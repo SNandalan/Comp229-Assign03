@@ -26,7 +26,7 @@ Date: 8 December 2017--%>
         </Columns>
     </asp:GridView>
         <br />
-        <p><a href="~/Update" class="btn btn-primary btn-lg">Add Student &raquo;</a></p>
+        <p><a href="Update.aspx" class="btn btn-primary btn-lg">Add Student &raquo;</a></p>
         </div>
 
     
