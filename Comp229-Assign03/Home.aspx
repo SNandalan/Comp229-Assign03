@@ -16,7 +16,7 @@ Date: 8 December 2017--%>
     <div class="jumbotron">
     <h3>List Of Students</h3>
         <asp:GridView ID="StudentGridView" runat="server" AutoGenerateColumns="False" 
-        DataKeyNames="StudentID" AllowSorting="True">
+        DataKeyNames="StudentID" AllowSorting="True" Height="340px" Width="908px">
         <Columns>
             <asp:HyperLinkField DataTextField="StudentID" HeaderText="Student ID" Visible="true" DataNavigateUrlFields="StudentID"
                 DataNavigateUrlFormatString="Student.aspx?StudentID={0}" />
