@@ -5,15 +5,14 @@ Date: 8 December 2017--%>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron">
     <h3>List of students enrolled in courses.</h3>
-        <asp:GridView ID="EnrollmentGridView" runat="server" AutoGenerateColumns="False" 
-        DataKeyNames="EnrollmentID" AllowSorting="True">
-        <Columns>            
-            <asp:BoundField DataField="EnrollmentID" HeaderText="Enrollment ID" />
-            <asp:BoundField DataField="CourseID" HeaderText="Course ID" />
-            <asp:BoundField DataField="StudentID" HeaderText="Student ID" />
-            <asp:BoundField DataField="Grade" HeaderText="Grade" />
-             <asp:CommandField HeaderText="Delete" DeleteText="Delete" 
-                ShowDeleteButton="true" ButtonType="Link" />
+        <asp:GridView ID="coursesGridView" runat="server" AutoGenerateColumns="False" 
+        DataKeyNames="CourseID" AllowSorting="True">
+        <Columns>
+            <asp:HyperLinkField DataTextField="CourseID" HeaderText="Course ID" Visible="true" DataNavigateUrlFields="CourseID"
+                DataNavigateUrlFormatString="Courses.aspx?CourseID={0}" />
+             <asp:BoundField DataField="Title" HeaderText="Title" />
+            <asp:BoundField DataField="Credits" HeaderText="Credits" />
+            <asp:BoundField DataField="DepartmentID" HeaderText="DepartmentID" />
         </Columns>
     </asp:GridView>
    </div>
